@@ -27,9 +27,16 @@ private bool Emailvalid = false;
         
     }
 
+    public void Registerbutton()
+    {
+        print("you have registred");
+    }
+
     // Update is called once per frame
     void Update()
     {
+        // checking if user has pressed tab to go other input fields
+
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             if (password.GetComponent<InputField>().isFocused)
@@ -48,6 +55,16 @@ private bool Emailvalid = false;
             }
 
 
+
+        }
+
+        // checking if user has put any information in the input fields
+
+        if (Input.GetKeyDown(KeyCode.Return)){
+            if (Password != "" && Email != "" && Username != "") {
+
+                Registerbutton();
+           }
         }
     
         Username = username.GetComponent<InputField>().text;
@@ -58,4 +75,5 @@ private bool Emailvalid = false;
 
 
 }
+
 
