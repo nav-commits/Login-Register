@@ -19,6 +19,8 @@ private string Form;
 private bool Emailvalid = false;
 
 
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,10 +32,22 @@ private bool Emailvalid = false;
     {
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            if (username.GetComponent<InputField>().isFocused)
+            if (password.GetComponent<InputField>().isFocused)
             {
                 email.GetComponent<InputField>().Select();
             }
+
+            if (email.GetComponent<InputField>().isFocused)
+            {
+                username.GetComponent<InputField>().Select();
+            }
+
+            if (username.GetComponent<InputField>().isFocused)
+            {
+                password.GetComponent<InputField>().Select();
+            }
+
+
         }
     
         Username = username.GetComponent<InputField>().text;
