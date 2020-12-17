@@ -56,6 +56,7 @@ private bool Emailvalid = false;
 
 
 
+
         }
 
         // checking if user has put any information in the input fields
