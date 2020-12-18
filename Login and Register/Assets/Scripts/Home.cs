@@ -3,15 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Movescene : MonoBehaviour
+public class Home : MonoBehaviour
 {
-  public void Movebut(string nextscene)
+    public void Homebut(string nextscene)
     {
         SceneManager.LoadScene(nextscene);
     }
 }
-
-
-
-
 
