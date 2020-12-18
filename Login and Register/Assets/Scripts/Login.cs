@@ -25,6 +25,11 @@ public class Login : MonoBehaviour
         print("you have logged in");
     }
 
+    public void Notloggedin()
+    {
+        print("you didnt log in");
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -56,6 +61,11 @@ public class Login : MonoBehaviour
             {
 
                 Loggedbutton();
+            }
+
+            if(Password == "" || Username == "")
+            {
+                Notloggedin();
             }
         }
 

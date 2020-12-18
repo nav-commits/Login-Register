@@ -28,6 +28,12 @@ private string Password;
         print("you have registred");
     }
 
+
+    public void NotRegbutton()
+    {
+        print("you have didnt register");
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -53,6 +59,7 @@ private string Password;
 
 
 
+
         }
 
         // checking if user has put any information in the input fields
@@ -62,6 +69,11 @@ private string Password;
 
                 Registerbutton();
            }
+
+            if(Password == "" || Email == "" || Username == "")
+            {
+                NotRegbutton();
+            }
         }
     
         Username = username.GetComponent<InputField>().text;
