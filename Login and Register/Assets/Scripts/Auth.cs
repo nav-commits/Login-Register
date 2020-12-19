@@ -11,6 +11,7 @@ public class Auth : MonoBehaviour
     public Text resulttext;
 
 
+
     Firebase.Auth.FirebaseAuth auth;
     
     // Start is called before the first frame update
