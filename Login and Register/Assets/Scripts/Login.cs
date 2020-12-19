@@ -13,7 +13,7 @@ public class Login : MonoBehaviour
     private string Username;
     private string Password;
 
-
+    string namers = "bob";
     // Start is called before the first frame update
     void Start()
     {
@@ -22,8 +22,10 @@ public class Login : MonoBehaviour
 
     public void Loggedbutton()
     {
-        print("you have logged in");
+        Console.WriteLine("you have logged in ");
     }
+
+
 
     public void Notloggedin()
     {
@@ -47,6 +49,7 @@ public class Login : MonoBehaviour
             {
                 password.GetComponent<InputField>().Select();
             }
+
 
 
 
