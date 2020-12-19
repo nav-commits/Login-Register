@@ -15,6 +15,9 @@ public GameObject password;
 private string Username;
 private string Email;
 private string Password;
+public Text resulttext;
+
+
 
 
 
@@ -26,7 +29,7 @@ private string Password;
 
     public void Registerbutton()
     {
-        print("you have registred");
+        Console.WriteLine("you have registred");
     }
 
 
@@ -82,6 +85,7 @@ private string Password;
         Password = password.GetComponent<InputField>().text;
 
     }
+
 
 
 }
