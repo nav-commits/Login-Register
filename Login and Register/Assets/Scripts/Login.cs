@@ -13,7 +13,7 @@ public class Login : MonoBehaviour
     private string Username;
     private string Password;
 
-    string namers = "bob";
+  
     // Start is called before the first frame update
     void Start()
     {

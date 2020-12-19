@@ -15,10 +15,6 @@ public GameObject password;
 private string Username;
 private string Email;
 private string Password;
-public Text resulttext;
-
-
-
 
 
     // Start is called before the first frame update
